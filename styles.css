@@ -115,6 +115,7 @@ header nav li:hover {
 @media only screen and (max-width: 750px) {
     .logo {
         margin-top: 8rem;
+        padding: 2rem;
         display: flex;
         flex-basis: auto;
         flex-shrink: 6;
