@@ -1,0 +1,232 @@
+html {
+    font-size: 20px;
+    font-family: "Baloo Chettan 2";
+    background-color: #f9e285;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+ }
+
+/* Header */
+
+header {
+    position: fixed;
+    background-color: rgba(21, 17, 82, 0.7);
+    width: 100%;
+    z-index: 10;
+}
+
+header .content {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+header nav li {
+    color: white;
+    padding-left: 1.5rem;
+    font-weight: 500;
+}
+
+header nav li:hover {
+    color: #FFD921;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:750px) {
+
+    header {
+        position: fixed;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    header nav ul{
+        padding-left: 0;
+        display: grid;
+        grid-template: repeat(4, 1fr) / 1fr 1fr;
+        margin: 0;
+        justify-items: center;
+    }
+    
+    header nav li {
+        padding: 0.3rem 4rem;
+
+    }
+
+    #home {
+        grid-area: 1 / 1 / span 1 / span 1;
+    }
+    #blog {
+        grid-area: 2 / 1 / span 1 / span 1;
+    }
+    #forums {
+        grid-area: 3 / 1 / span 1 / span 1;
+    }
+    #wiki {
+        grid-area: 4 / 1 / span 1 / span 1;
+    }
+    #media {
+        grid-area: 1 / 2 / span 1 / span 1;
+    }
+    #merch {
+        grid-area: 2 / 2 / span 1 / span 1;
+    }
+    #faq {
+        grid-area: 3 / 2 / span 1 / span 1;
+    }
+    #tabletop {
+        grid-area: 4 / 2 / span 1 / span 1;
+    }
+}
+
+/* Banner */
+
+.banner {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-image: url("resources/stardew-banner.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.logo {
+    margin-top: 8rem;
+    display: flex;
+    flex-basis: auto;
+    flex-shrink: 6;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 750px) {
+    .logo {
+        margin-top: 8rem;
+        display: flex;
+        flex-basis: auto;
+        flex-shrink: 6;
+
+    }
+}
+
+/* Intro */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 400;
+    flex-shrink: 4;
+    flex-basis: auto;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    color: #357bca;
+    text-align: center;
+}
+
+.bold {
+    color: darkorange;
+}
+
+/* Divider */
+
+.chicken-divider {
+    display: flex;
+    justify-content: center;
+}
+
+.chicken-divider img {
+    height: 2rem;
+    padding: 1rem;  
+}
+
+@media only screen and (max-width: 750px) {
+    .hidden-chicken {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .hidden-chicken-2 {
+        display: none;
+    }
+}
+
+/* Features */
+
+.feature-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex: 1 0 25%;
+}
+
+.image-container {
+    width: 18rem;
+    text-align: center;
+}
+
+.image-container img{
+    height: 12rem;
+    width: 18rem;
+    object-fit: cover;
+}
+
+@media only screen and (max-width:550px) {
+    .mobile-hidden-img {
+        display: none;
+    }
+    .image-container {
+        width: 22rem;
+        font-size: 1rem;
+    }
+    p {
+        margin: 0.3em;
+      }
+}
+
+/* Platforms */
+
+.platforms {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.platforms img {
+    align-self: center;
+    padding: 1em;
+}
+
+/* Concerned Ape */
+
+.concerned-ape {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.copyright {
+    max-width: 90%;
+    text-align: center;
+    padding-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
